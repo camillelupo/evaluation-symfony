@@ -220,3 +220,6 @@ $RECYCLE.BIN/
 
 .env.local
 # End of https://www.toptal.com/developers/gitignore/api/symfony,jetbrains+all,windows,macos,linux
+###> lexik/jwt-authentication-bundle ###
+/config/jwt/*.pem
+###< lexik/jwt-authentication-bundle ###
