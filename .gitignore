@@ -218,4 +218,5 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+.env.local
 # End of https://www.toptal.com/developers/gitignore/api/symfony,jetbrains+all,windows,macos,linux
