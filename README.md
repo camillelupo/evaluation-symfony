@@ -17,3 +17,9 @@ php bin/console doctrine:database:create
 php bin/console doctrine:schema:update --force
 
 symfony server:start
+
+Créer un utilsateur via la route /register sur postman
+
+Ce connecter via la route api/login sur postman pour récuperer le jwt
+
+Le jwt permet la création de films via la route api/createFilms
