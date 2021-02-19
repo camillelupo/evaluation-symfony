@@ -21,10 +21,13 @@ class AccueilController extends AbstractController
     /**
      * @Route("/accueil", name="accueil")
      */
-    public function index(): Response
+    public function index(FilmsRepository $filmsRepository): Response
     {
+        $films = $filmsRepository->findAll();
+
         return $this->render('accueil/index.html.twig', [
             'controller_name' => 'AccueilController',
+                'films' => $films
         ]);
     }
 
@@ -43,7 +46,7 @@ class AccueilController extends AbstractController
     }
 
     /**
-     * @Route("api/createFilms", name="createFilms", methods={"POST"})
+     * @Route("/api/createFilms", name="createFilms", methods={"POST"})
      * @param Request $request
      * @return JsonResponse
      */
